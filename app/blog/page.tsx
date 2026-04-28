@@ -26,7 +26,7 @@ const posts = [
     title: 'B12 Water vs Supplements: Health Benefits Explained',
     excerpt: 'Discover why B12 infused water is becoming the preferred choice for daily wellness and energy.',
     date: 'April 28, 2026',
-    image: '/images/blog/2 76.png',
+    image: '/images/blog/1 80.png',
     slug: 'b12-water-benefits',
     category: 'Wellness',
   },
