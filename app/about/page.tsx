@@ -5,8 +5,8 @@ import DistributorCTA from '@/components/sections/DistributorCTA'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us',
-  description: 'The story behind IRA Beverages — Born in Visakhapatnam, built for India.',
+  title: 'About Our Story | IRA Beverages',
+  description: 'Discover the story of IRA Beverages — from our roots in Anakapalli to our mission of delivering "Pure by Nature" hydration across India. Learn about our commitment to quality and innovation.',
 }
 
 export default function AboutPage() {

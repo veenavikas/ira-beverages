@@ -6,8 +6,8 @@ import DistributorCTA from '@/components/sections/DistributorCTA'
 import { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Blog | IRA Beverages',
-  description: 'News, updates, and stories from IRA Beverages.',
+  title: 'Blog & Latest Updates | IRA Beverages',
+  description: 'Stay updated with the latest news, flavour launches, and behind-the-scenes stories from the world of IRA Beverages.',
 }
 
 // Placeholder blog posts

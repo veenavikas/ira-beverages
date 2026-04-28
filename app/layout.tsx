@@ -8,15 +8,15 @@ import FloatingWhatsApp from '@/components/sections/FloatingWhatsApp'
 const inter = Inter({ subsets: ['latin'], variable: '--font-body' })
 
 export const metadata: Metadata = {
-  title: { default: 'IRA Beverages — Premium Natural Sodas', template: '%s | IRA Beverages' },
-  description: 'IRA Beverages crafts bold, natural sodas — Cola Super, Blueberry, String & Lime Lemon. Made in Andhra Pradesh, India.',
-  keywords: ['IRA Beverages', 'natural soda India', 'goli soda Visakhapatnam', 'beverages Andhra Pradesh'],
+  title: { default: 'IRA Beverages | Premium Natural Sodas & Goli Soda', template: '%s | IRA Beverages' },
+  description: 'Experience the bold, authentic taste of IRA Beverages. From our signature Cola Super to Blueberry and Lime Lemon, we craft premium natural sodas in Anakapalli, Andhra Pradesh.',
+  keywords: ['IRA Beverages', 'natural soda India', 'best goli soda Andhra Pradesh', 'premium soft drinks India', 'Anakapalli beverages', 'healthy soda alternatives'],
   openGraph: {
     type: 'website',
     locale: 'en_IN',
     url: 'https://irabeverages.com',
     siteName: 'IRA Beverages',
-    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+    images: [{ url: '/images/products/banner.png', width: 1200, height: 630 }],
   },
   twitter: { card: 'summary_large_image' },
 }
