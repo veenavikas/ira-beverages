@@ -99,7 +99,7 @@ export default function AlkalineWaterBlog() {
 
         <div className="font-body text-lg leading-relaxed space-y-8 text-brand-dark/80">
           <p>
-            In recent years, alkaline water in India has seen a significant rise in demand, especially among health-conscious consumers. As people become more aware of hydration quality, immunity, and overall wellness, the shift from regular bottled water to premium alkaline drinking water brands is growing rapidly.
+            In recent years, alkaline water in India has seen a significant rise in demand, especially among health-conscious consumers. As people become more aware of hydration quality, immunity, and overall wellness, the shift from regular bottled water to <a href="https://irabeverages.com/" className="text-brand-green font-bold hover:underline">premium alkaline drinking water brands</a> is growing rapidly.
           </p>
           <p>
             But what exactly is alkaline water? Is it truly beneficial? And which are the best alkaline water brands in India today? Let’s explore everything in detail.
@@ -129,6 +129,7 @@ export default function AlkalineWaterBlog() {
           </div>
 
           <h2 className="text-3xl font-bold text-brand-dark pt-4">Benefits of Alkaline Water</h2>
+          <p className="mb-4 text-sm italic">Learn more about <a href="https://www.healthline.com/health/food-nutrition/alkaline-water-benefits-risks" target="_blank" rel="noopener noreferrer" className="text-brand-green hover:underline">alkaline water benefits</a> on Healthline.</p>
           <div className="grid md:grid-cols-2 gap-6">
             <div className="p-6 bg-brand-green/5 rounded-2xl">
               <h4 className="font-bold text-brand-green mb-2">1. Enhanced Hydration</h4>
