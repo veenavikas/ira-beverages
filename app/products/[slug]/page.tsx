@@ -17,6 +17,12 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   }
 }
 
+export async function generateStaticParams() {
+  return products.map((product) => ({
+    slug: product.slug,
+  }))
+}
+
 export default async function ProductDetailPage({ params }: { params: Promise<{ slug: string }> }) {
   const { slug } = await params
   const product = products.find(p => p.slug === slug)
