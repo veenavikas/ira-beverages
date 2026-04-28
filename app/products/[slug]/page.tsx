@@ -31,11 +31,14 @@ export default async function ProductDetailPage({ params }: { params: Promise<{ 
     <div className="bg-brand-cream pb-24">
       {/* Hero Section */}
       <section 
-        className="min-h-[100dvh] pt-32 pb-20 px-6 md:px-[80px] flex items-center"
+        className="relative min-h-[100dvh] pt-32 pb-20 px-6 md:px-[80px] flex items-center overflow-hidden"
         style={{ backgroundColor: product.color.primary }}
       >
-        <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div className="text-white z-10">
+        <div className="absolute inset-0 z-0 mix-blend-overlay opacity-20">
+          <Image src="/images/products/banner.png" alt="Texture pattern" fill className="object-cover grayscale" />
+        </div>
+        <div className="max-w-[1440px] mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+          <div className="text-white z-10 drop-shadow-md">
             <SectionLabel className="!text-white before:bg-white">{product.flavourNotes[0]}</SectionLabel>
             <h1 className="text-6xl md:text-[80px] leading-none mb-6">{product.name}</h1>
             <p className="text-2xl md:text-3xl font-display font-medium italic mb-8 opacity-90">{product.tagline}</p>

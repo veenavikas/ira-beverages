@@ -14,8 +14,18 @@ export default function Hero() {
 
   return (
     <section className="relative h-[100dvh] min-h-[600px] w-full overflow-hidden bg-brand-dark pt-20">
-      {/* Background Gradient */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--color-brand-green)_0%,_var(--color-brand-dark)_70%)] opacity-40"></div>
+      {/* Background Image */}
+      <div className="absolute inset-0 z-0">
+        <Image
+          src="/images/products/hero%20banner.png"
+          alt="IRA Beverages Premium Background"
+          fill
+          className="object-cover opacity-60 mix-blend-luminosity"
+          priority
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-brand-dark via-brand-dark/80 to-transparent"></div>
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,_var(--color-brand-green)_0%,_transparent_70%)] opacity-30 mix-blend-overlay"></div>
+      </div>
 
       <div className="relative z-10 max-w-[1440px] mx-auto px-6 md:px-[80px] h-full flex flex-col justify-center">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full pb-20">
