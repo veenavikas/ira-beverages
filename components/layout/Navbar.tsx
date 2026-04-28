@@ -15,7 +15,7 @@ export default function Navbar() {
   const backgroundColor = useTransform(
     scrollY,
     [0, 50],
-    ['rgba(255, 255, 255, 0.9)', 'rgba(255, 255, 255, 1)']
+    ['rgba(116, 168, 89, 0.9)', 'rgba(116, 168, 89, 1)']
   )
   const backdropFilter = useTransform(
     scrollY,
@@ -50,37 +50,41 @@ export default function Navbar() {
         className="fixed top-0 left-1/2 -translate-x-1/2 z-50 h-[80px] md:h-[90px] w-[95%] max-w-[1200px] rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.12)] border border-brand-dark/5 transition-colors"
       >
         <div className="px-6 md:px-8 h-full flex items-center justify-between">
-          <Link href="/" className="relative z-50 flex items-center transition-transform hover:scale-105">
-            <Image 
-              src="/images/products/logo.png"
-              alt="IRA Beverages Logo"
-              width={240}
-              height={90}
-              className="object-contain w-auto h-14 md:h-16 scale-110 origin-left"
-            />
-          </Link>
+          <div className="flex-1 flex justify-start">
+            <Link href="/" className="relative z-50 flex items-center transition-transform hover:scale-105">
+              <Image 
+                src="/images/products/logo.png"
+                alt="IRA Beverages Logo"
+                width={240}
+                height={90}
+                className="object-contain w-auto h-14 md:h-16 scale-110 origin-left"
+              />
+            </Link>
+          </div>
 
           {/* Desktop Nav */}
-          <div className="hidden md:flex items-center gap-8">
-            <div className="flex gap-6">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="text-sm font-body font-bold uppercase tracking-wider text-brand-dark hover:text-brand-orange transition-colors"
-                >
-                  {link.name}
-                </Link>
-              ))}
-            </div>
-            <Button href="/distributors" variant="filled">
+          <div className="hidden md:flex flex-1 justify-center items-center gap-6">
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                href={link.href}
+                className="text-sm font-body font-bold uppercase tracking-wider text-white hover:text-brand-orange transition-colors"
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
+
+          {/* Action Button */}
+          <div className="hidden md:flex flex-1 justify-end items-center">
+            <Button href="/distributors" variant="outline" className="!border-white !text-white hover:!bg-white hover:!text-brand-green">
               Become a Distributor
             </Button>
           </div>
 
           {/* Mobile Menu Toggle */}
           <button
-            className="md:hidden relative z-50 text-brand-dark p-2"
+            className="md:hidden relative z-50 text-white p-2"
             onClick={() => setIsOpen(!isOpen)}
             aria-label="Toggle menu"
           >

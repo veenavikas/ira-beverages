@@ -11,16 +11,20 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-brand-dark pt-32">
+    <div className="min-h-screen bg-brand-cream pt-32">
       {/* Brand Statement */}
       <section className="min-h-[70vh] flex flex-col justify-center px-6 md:px-[80px] py-20 relative">
-        <div className="max-w-[1440px] mx-auto w-full">
-          <SectionLabel>OUR MISSION</SectionLabel>
-          <h1 className="text-5xl md:text-8xl lg:text-[110px] text-brand-cream max-w-6xl leading-[0.9] mt-6">
-            We made soda that actually tastes like something.
+        <div className="absolute inset-0 z-0">
+          <Image src="/images/products/hero%20banner.png" alt="Nature" fill className="object-cover opacity-90" />
+          <div className="absolute inset-0 bg-brand-dark/50" />
+        </div>
+        <div className="max-w-[1440px] mx-auto w-full relative z-10 text-center">
+          <SectionLabel className="mx-auto justify-center !text-brand-cream before:bg-brand-cream">PREMIUM HYDRATION</SectionLabel>
+          <h1 className="text-5xl md:text-8xl lg:text-[110px] text-brand-cream max-w-6xl mx-auto leading-[0.9] mt-6">
+            BEYOND REFRESHMENT
           </h1>
-          <p className="mt-12 text-xl md:text-2xl font-body text-brand-cream/70 max-w-2xl text-balance">
-            No more artificial aftertastes. No more boring carbonation. Just bold, unapologetic flavour made from real ingredients.
+          <p className="mt-12 text-xl md:text-2xl font-body text-brand-cream/90 max-w-3xl mx-auto text-balance">
+            Offering a carefully crafted selection of bottled waters, sodas, and more, IRA Beverages transcends the ordinary to bring you premium hydration.
           </p>
         </div>
       </section>
@@ -29,17 +33,19 @@ export default function AboutPage() {
       <section className="bg-brand-cream text-brand-dark py-24 px-6 md:px-[80px]">
         <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
-            <SectionLabel className="!text-brand-dark before:bg-brand-dark">THE ORIGIN</SectionLabel>
-            <h2 className="text-5xl md:text-6xl mb-8 mt-4">Born in Vizag.</h2>
-            <div className="font-body text-lg md:text-xl text-brand-dark/80 space-y-6">
+            <h2 className="text-4xl md:text-5xl text-brand-orange mb-8 font-bold">About 'Ira Beverages'</h2>
+            <div className="font-body text-lg text-brand-dark/80 space-y-4">
               <p>
-                IRA Beverages started with a simple question: Why do all the sodas on our shelves taste the same? 
+                At IRA Beverages, we believe that refreshment is more than just quenching thirst — it's about crafting a pure, healthy, and delightful experience with every sip.
               </p>
               <p>
-                We realized that the beverage industry had stopped innovating on taste. It was all about cost-cutting and artificial syrups. We decided to go the other way.
+                Our journey began with a simple vision to deliver beverages that are truly "Pure by Nature." We are dedicated to crafting high-quality, naturally sourced drinks that combine great taste, premium ingredients, and complete purity. Every product we create reflects our commitment to innovation, sustainability, and well-being, ensuring that our consumers enjoy a drink that's as wholesome as it is refreshing.
               </p>
               <p>
-                From our facility in Visakhapatnam, Andhra Pradesh, we spent months perfecting four distinct flavours. We cranked up the carbonation, sourced real fruit extracts, and designed a brand that looks as bold as it tastes.
+                In fact, we take pride in utilizing modern technology with nature's essence to produce beverages that meet global standards of quality and hygiene. Whether it's our packaged drinking water or our innovative range of natural drinks, each bottle tells a story of trust, care, and purity.
+              </p>
+              <p className="font-bold text-brand-green">
+                IRA Beverages — Pure by Nature, Crafted for You.
               </p>
             </div>
           </div>

@@ -31,20 +31,20 @@ export default function Hero() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center h-full pb-20">
           
           <div className="flex flex-col items-start z-20">
-            <SectionLabel>EST. 2023 · VISAKHAPATNAM</SectionLabel>
+            <SectionLabel>FEEL THE ZEST</SectionLabel>
             
-            <h1 className="text-6xl md:text-[80px] lg:text-[96px] text-brand-cream mb-6">
-              <AnimatedText text="DRINK" />
-              <AnimatedText text="DIFFERENT." delay={0.4} className="text-brand-lime" />
+            <h1 className="text-6xl md:text-[80px] lg:text-[96px] text-brand-cream mb-6 leading-tight">
+              <AnimatedText text="EXPERIENCE" />
+              <AnimatedText text="THE SOFT DRINK" delay={0.4} className="text-brand-lime" />
             </h1>
             
             <motion.p 
-              className="text-lg md:text-xl font-body text-brand-cream/70 mb-10 max-w-md"
+              className="text-lg md:text-xl font-body text-brand-cream mb-10 max-w-md font-bold uppercase tracking-widest"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.8, duration: 0.6 }}
             >
-              Premium natural sodas crafted for bold people.
+              Born from Nature<br/>Made for you
             </motion.p>
             
             <motion.div 
@@ -53,8 +53,7 @@ export default function Hero() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.6 }}
             >
-              <Button href="/products" variant="filled">Explore Flavours →</Button>
-              <Button href="/distributors" variant="outline">Become a Distributor</Button>
+              <Button href="/products" variant="filled" className="!bg-brand-orange !text-white !border-none hover:opacity-90">SHOP NOW</Button>
             </motion.div>
           </div>
 

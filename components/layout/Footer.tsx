@@ -5,7 +5,7 @@ import { Camera, Tv, PlayCircle, MessageCircle } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="bg-[#050505] text-brand-cream border-t border-brand-cream/10 pt-16 pb-8 px-6 md:px-[80px]">
+    <footer className="bg-brand-green text-brand-cream border-t border-brand-cream/10 pt-16 pb-8 px-6 md:px-[80px]">
       <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
         <div className="flex flex-col gap-6">
           <Link href="/" className="inline-block transition-transform hover:scale-105">
