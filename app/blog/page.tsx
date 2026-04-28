@@ -21,6 +21,24 @@ const posts = [
     slug: 'alkaline-water-guide-2026',
     category: 'Guide',
   },
+  {
+    id: 2,
+    title: 'B12 Water vs Supplements: Health Benefits Explained',
+    excerpt: 'Discover why B12 infused water is becoming the preferred choice for daily wellness and energy.',
+    date: 'April 28, 2026',
+    image: '/images/products/banner.png',
+    slug: 'b12-water-benefits',
+    category: 'Wellness',
+  },
+  {
+    id: 3,
+    title: 'Carbonated Water vs Soft Drinks: Is it Healthier?',
+    excerpt: 'A deep dive into why switching to sparkling water can transform your hydration habits.',
+    date: 'April 28, 2026',
+    image: '/images/products/clubsoda.png',
+    slug: 'carbonated-water-vs-soft-drinks',
+    category: 'Health',
+  },
 ]
 
 export default function BlogPage() {
