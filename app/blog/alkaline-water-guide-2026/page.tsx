@@ -94,7 +94,7 @@ export default function AlkalineWaterBlog() {
         </h1>
 
         <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden mb-12 shadow-xl">
-          <Image src="/images/blog/1 51 (1).png" alt="Alkaline Water Guide" fill className="object-cover" />
+          <Image src="/images/blog/1_51_1.png" alt="Alkaline Water Guide" fill className="object-cover" />
         </div>
 
         <div className="font-body text-lg leading-relaxed space-y-8 text-brand-dark/80">
