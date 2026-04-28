@@ -14,30 +14,12 @@ export const metadata: Metadata = {
 const posts = [
   {
     id: 1,
-    title: 'Why We Chose Natural Ingredients for Our Sodas',
-    excerpt: 'Discover the journey of creating bold flavors without the artificial aftertaste.',
-    date: 'Oct 12, 2023',
+    title: 'Top-Rated Alkaline Water Products in India (2026 Guide)',
+    excerpt: 'Explore the rise of premium alkaline water in India and why IRA Beverages is a leading emerging brand.',
+    date: 'April 28, 2026',
     image: '/images/products/banner.png',
-    slug: 'why-we-chose-natural-ingredients',
-    category: 'Inside IRA',
-  },
-  {
-    id: 2,
-    title: 'The Perfect Mixer: Enhancing Cocktails with IRA Clubsoda',
-    excerpt: 'Elevate your mixology game with our aggressively carbonated, pure clubsoda.',
-    date: 'Nov 05, 2023',
-    image: '/images/products/clubsoda.png',
-    slug: 'perfect-mixer-ira-clubsoda',
-    category: 'Recipes',
-  },
-  {
-    id: 3,
-    title: 'Expanding Our Reach: IRA Beverages Now in 500+ Stores',
-    excerpt: 'A milestone for our local brand as we expand across Andhra Pradesh and beyond.',
-    date: 'Jan 18, 2024',
-    image: '/images/products/ira%20products.png',
-    slug: 'expanding-our-reach',
-    category: 'News',
+    slug: 'alkaline-water-guide-2026',
+    category: 'Guide',
   },
 ]
 
