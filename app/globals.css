@@ -1,26 +1,91 @@
 @import "tailwindcss";
 
+@theme {
+  --color-brand-dark: #1A1A1A; /* Text color from logo */
+  --color-brand-cream: #FFFFFF; /* Clean white to match logo bg */
+  --color-brand-green: #6A1B9A; /* Replaced with Deep Purple from trunk */
+  --color-brand-lime: #FFB800; /* Replaced with Bright Yellow/Orange from head */
+  --color-brand-orange: #FF6B00; /* Bright Orange from ear */
+  --color-brand-cola: #3D1A0A;
+  --color-brand-berry: #7D269D; /* More vibrant purple */
+  --color-brand-string: #E11D74; /* Magenta pink */
+  --color-brand-lemon: #F8C301; /* Golden yellow */
+
+  --font-display: var(--font-display), sans-serif;
+  --font-body: var(--font-body), sans-serif;
+}
+
+@font-face {
+  font-family: 'ClashDisplay';
+  src: url('/fonts/ClashDisplay-Variable.woff2') format('woff2');
+  font-weight: 200 700;
+  font-display: swap;
+}
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-display: 'ClashDisplay', sans-serif;
+  --font-body: 'Inter', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html, body {
+  overflow-x: hidden;
+  background-color: var(--color-brand-dark);
+  color: var(--color-brand-cream);
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M10 2v3c0 1.5-2 3-2 5v9c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-9c0-2-2-3.5-2-5V2'/><path d='M10 2h4'/><path d='M10 5h4'/></svg>") 12 12, auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+a, button, [role="button"], input[type="submit"], input[type="button"] {
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23FFB800' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'><path d='M10 2v3c0 1.5-2 3-2 5v9c0 1.1.9 2 2 2h4c1.1 0 2-.9 2-2v-9c0-2-2-3.5-2-5V2'/><path d='M10 2h4'/><path d='M10 5h4'/></svg>") 12 12, pointer !important;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
   }
 }
 
+/* Base Headings */
+h1 {
+  font-family: var(--font-display);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.0;
+}
+
+h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+}
+
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body);
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+caption, label, .label-text {
+  font-family: var(--font-body);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+/* Hide scrollbar for horizontal scroll sections */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
 }
