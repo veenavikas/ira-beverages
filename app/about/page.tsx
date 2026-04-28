@@ -15,7 +15,7 @@ export default function AboutPage() {
       {/* Brand Statement */}
       <section className="min-h-[70vh] flex flex-col justify-center px-6 md:px-[80px] py-20 relative">
         <div className="absolute inset-0 z-0">
-          <Image src="/images/products/hero%20banner.png" alt="Nature" fill className="object-cover opacity-90" />
+          <Image src="/images/products/banner.png" alt="Nature" fill className="object-cover opacity-90" />
           <div className="absolute inset-0 bg-brand-dark/50" />
         </div>
         <div className="max-w-[1440px] mx-auto w-full relative z-10 text-center">
