@@ -20,9 +20,9 @@ export const metadata: Metadata = {
   },
   twitter: { card: 'summary_large_image' },
   icons: {
-    icon: '/favicon.ico',
-    shortcut: '/favicon.ico',
-    apple: '/apple-touch-icon.png',
+    icon: '/brand-icon.png',
+    shortcut: '/brand-icon.png',
+    apple: '/brand-icon.png',
   },
 }
 
