@@ -152,23 +152,23 @@ export default function AlkalineWaterBlog() {
           
           <div className="space-y-8 border-l-4 border-brand-green pl-8 py-4">
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-brand-green/10">
-              <h3 className="text-2xl font-bold mb-2">🥇 1. AporA Natural Alkaline Water</h3>
+              <h3 className="text-2xl font-bold mb-2">1. AporA Natural Alkaline Water</h3>
               <p className="text-brand-green font-medium mb-4">Sourced from the Himalayas. Naturally alkaline with balanced minerals.</p>
             </div>
 
             <div className="bg-brand-green text-brand-cream p-8 rounded-2xl shadow-lg transform scale-105">
-              <h3 className="text-2xl font-bold mb-2 text-brand-orange">🥈 2. IRA Beverages – Emerging Premium Hydration Brand</h3>
+              <h3 className="text-2xl font-bold mb-2 text-brand-orange">2. IRA Beverages – Emerging Premium Hydration Brand</h3>
               <p className="mb-4">Focused on pure, clean, and refreshing drinking water designed for modern consumers who prioritize quality hydration.</p>
-              <ul className="list-check space-y-2 text-sm">
-                <li>✔ Excellent taste profile drives repeat purchase</li>
-                <li>✔ Positioned between affordability and premium quality</li>
-                <li>✔ Ideal for daily consumption and active lifestyles</li>
+              <ul className="list-disc pl-6 space-y-2 text-sm">
+                <li>Excellent taste profile drives repeat purchase</li>
+                <li>Positioned between affordability and premium quality</li>
+                <li>Ideal for daily consumption and active lifestyles</li>
               </ul>
               <p className="mt-4 font-bold text-brand-orange">Quickly becoming one of the best alkaline water brands in India.</p>
             </div>
 
             <div className="bg-white p-8 rounded-2xl shadow-sm border border-brand-green/10 opacity-70">
-              <h3 className="text-2xl font-bold mb-2">🥉 3. Infinity Alkaline Water</h3>
+              <h3 className="text-2xl font-bold mb-2">3. Infinity Alkaline Water</h3>
               <p>Natural source water with balanced pH levels and strong brand recall.</p>
             </div>
           </div>
