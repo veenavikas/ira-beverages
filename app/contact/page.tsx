@@ -48,13 +48,18 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="min-h-screen bg-brand-dark pt-32 pb-0 text-brand-cream">
+    <div className="min-h-screen bg-brand-cream pt-32 pb-0 text-brand-dark">
       {/* Header */}
-      <section className="px-6 md:px-[80px] py-20 bg-[#050505] text-center border-b border-brand-cream/10">
-        <h1 className="text-6xl md:text-[80px] leading-none mb-6">Let's Talk</h1>
-        <p className="text-xl md:text-2xl font-body text-brand-cream/70 max-w-2xl mx-auto">
-          For orders, partnerships, or just to say hi.
-        </p>
+      <section className="px-6 md:px-[80px] py-20 bg-brand-green text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <Image src="/images/products/banner.png" alt="pattern" fill className="object-cover grayscale invert" />
+        </div>
+        <div className="relative z-10">
+          <h1 className="text-6xl md:text-[80px] leading-none mb-6 text-brand-cream">Let's Stay Connected</h1>
+          <p className="text-xl md:text-2xl font-body text-brand-cream/90 max-w-3xl mx-auto">
+            At IRA Beverages, we value every opportunity to connect. Whether you're a customer, a retailer, or a potential partner, we're here to assist you.
+          </p>
+        </div>
       </section>
 
       <section className="bg-brand-cream text-brand-dark">
@@ -66,7 +71,7 @@ export default function ContactPage() {
             
             <div className="space-y-12 mb-16">
               <div className="flex gap-6">
-                <div className="w-12 h-12 bg-brand-dark text-brand-lime rounded-full flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 bg-brand-green text-white rounded-full flex items-center justify-center shrink-0">
                   <Phone size={24} />
                 </div>
                 <div>
@@ -76,17 +81,17 @@ export default function ContactPage() {
               </div>
 
               <div className="flex gap-6">
-                <div className="w-12 h-12 bg-brand-dark text-brand-lime rounded-full flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 bg-brand-green text-white rounded-full flex items-center justify-center shrink-0">
                   <Mail size={24} />
                 </div>
                 <div>
                   <h4 className="font-body font-bold uppercase tracking-wider text-sm mb-2 opacity-70">Email</h4>
-                  <p className="text-xl font-bold">irabevarages@gmail.com</p>
+                  <p className="text-xl font-bold">irabeverages@gmail.com</p>
                 </div>
               </div>
 
               <div className="flex gap-6">
-                <div className="w-12 h-12 bg-brand-dark text-brand-lime rounded-full flex items-center justify-center shrink-0">
+                <div className="w-12 h-12 bg-brand-green text-white rounded-full flex items-center justify-center shrink-0">
                   <MapPin size={24} />
                 </div>
                 <div>
@@ -94,7 +99,7 @@ export default function ContactPage() {
                   <p className="text-lg leading-relaxed text-balance">
                     Varada Revenue, Behind Sri Laxmi Rice & Oil Mill,<br />
                     K.Kotapadu Mandal, Anakapalli,<br />
-                    Andhra Pradesh 531022, India
+                    Andhra Pradesh - 531022, India
                   </p>
                 </div>
               </div>
@@ -173,7 +178,7 @@ export default function ContactPage() {
                 <button 
                   type="submit" 
                   disabled={isSubmitting}
-                  className="w-full h-14 bg-brand-dark text-brand-cream font-body font-bold uppercase tracking-wider rounded-full hover:bg-black transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-4"
+                  className="w-full h-14 bg-brand-green text-white font-body font-bold uppercase tracking-wider rounded-full hover:bg-brand-dark transition-colors disabled:opacity-50 disabled:cursor-not-allowed mt-4"
                 >
                   {isSubmitting ? 'Sending...' : 'Send Message →'}
                 </button>

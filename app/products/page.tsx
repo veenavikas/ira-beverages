@@ -25,11 +25,14 @@ export default function ProductsPage() {
   return (
     <div className="min-h-screen bg-brand-cream text-brand-dark pt-32 pb-24">
       {/* Header */}
-      <div className="bg-brand-dark text-brand-cream py-20 px-6 md:px-[80px] -mt-32 pt-40 mb-12">
-        <div className="max-w-[1440px] mx-auto text-center flex flex-col items-center">
-          <SectionLabel>THE RANGE</SectionLabel>
-          <h1 className="text-6xl md:text-8xl mt-4 mb-6">All Flavours</h1>
-          <p className="text-xl font-body text-brand-cream/70 italic">Crafted for those who refuse ordinary.</p>
+      <div className="bg-brand-green text-brand-cream py-20 px-6 md:px-[80px] -mt-32 pt-40 mb-12 relative overflow-hidden">
+        <div className="absolute inset-0 opacity-20 pointer-events-none">
+          <Image src="/images/products/banner.png" alt="pattern" fill className="object-cover grayscale invert" />
+        </div>
+        <div className="max-w-[1440px] mx-auto text-center flex flex-col items-center relative z-10">
+          <SectionLabel className="!text-brand-cream before:bg-brand-cream">OUR RANGE</SectionLabel>
+          <h1 className="text-6xl md:text-8xl mt-4 mb-6">Our Collection of Products</h1>
+          <p className="text-xl font-body text-brand-cream/80 italic">Experience the pure taste of nature in every bottle.</p>
         </div>
       </div>
 

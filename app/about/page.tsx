@@ -60,37 +60,66 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Values */}
-      <section className="bg-brand-dark text-brand-cream py-32 px-6 md:px-[80px]">
-        <div className="max-w-[1440px] mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
+      {/* Mission & Legacy */}
+      <section className="bg-brand-green text-brand-cream py-32 px-6 md:px-[80px]">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div>
+            <h3 className="text-4xl md:text-5xl font-bold mb-8">Our Mission</h3>
+            <p className="text-lg md:text-xl opacity-90 leading-relaxed">
+              At IRA Beverages, our mission is to deliver premium hydration through products that are pure, refreshing, and crafted with the highest standards of quality. We strive to inspire a healthier lifestyle by providing natural beverage choices that celebrate the purity of nature.
+            </p>
+          </div>
+          <div>
+            <h3 className="text-4xl md:text-5xl font-bold mb-8">A Legacy of Purity</h3>
+            <p className="text-lg md:text-xl opacity-90 leading-relaxed">
+              IRA Beverages was born out of a desire to redefine the way people experience bottled drinks. From our humble beginnings in Visakhapatnam to becoming a trusted name across the region, our legacy is built on a foundation of trust, transparency, and a passion for excellence.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Innovation Section */}
+      <section className="bg-brand-cream text-brand-dark py-24 px-6 md:px-[80px]">
+        <div className="max-w-[1440px] mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-bold mb-16 text-brand-green">IRA Is Inspired by Innovation</h2>
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
             {[
-              { title: "Taste First", desc: "If it doesn't make you say 'wow' on the first sip, we don't bottle it." },
-              { title: "Made Local", desc: "Proudly manufactured in Andhra Pradesh, creating local jobs and supporting our community." },
-              { title: "Honest Ingredients", desc: "No hidden chemicals. Just natural extracts, pure sugar, and water." }
-            ].map((value, i) => (
-              <div key={i} className="border-t border-brand-cream/20 pt-8">
-                <h3 className="text-3xl md:text-4xl mb-4 text-brand-lime">{value.title}</h3>
-                <p className="font-body text-lg text-brand-cream/70">{value.desc}</p>
+              { icon: "🚩", title: "Proudly Independent", desc: "Purpose-Driven" },
+              { icon: "📜", title: "Certified Quality", desc: "Global Standards" },
+              { icon: "🎧", title: "Customer-First", desc: "Philosophy" },
+              { icon: "🌍", title: "Sustainability", desc: "Focused" }
+            ].map((item, i) => (
+              <div key={i} className="flex flex-col items-center">
+                <div className="w-20 h-20 bg-brand-green/10 rounded-full flex items-center justify-center text-3xl mb-4">
+                  {item.icon}
+                </div>
+                <h4 className="font-bold text-lg mb-1">{item.title}</h4>
+                <p className="text-sm opacity-60 uppercase tracking-wider">{item.desc}</p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Team (Placeholder) */}
-      <section className="bg-brand-cream text-brand-dark py-24 px-6 md:px-[80px]">
-        <div className="max-w-[1440px] mx-auto text-center">
-          <SectionLabel className="!text-brand-dark before:bg-brand-dark mx-auto justify-center">THE PEOPLE</SectionLabel>
-          <h2 className="text-5xl md:text-6xl mt-4 mb-16">Behind the Bottle</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4].map(i => (
-              <div key={i} className="text-left">
-                <div className="aspect-[3/4] bg-brand-dark/10 rounded-xl mb-4"></div>
-                <h4 className="font-display font-bold text-2xl">Team Member {i}</h4>
-                <p className="font-body text-brand-dark/60 font-medium">Co-Founder</p>
-              </div>
-            ))}
+      {/* Pure by Nature Section */}
+      <section className="bg-brand-green text-brand-cream py-24 px-6 md:px-[80px] relative overflow-hidden">
+        <div className="max-w-[1440px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div className="relative h-[600px] rounded-3xl overflow-hidden shadow-2xl">
+            <Image src="/images/products/ira%20products.png" alt="Pure nature products" fill className="object-cover" />
+          </div>
+          <div>
+            <h2 className="text-4xl md:text-6xl font-bold mb-8 leading-tight">Pure by nature</h2>
+            <div className="space-y-6 text-lg opacity-90">
+              <p>
+                "Pure by Nature" isn't just our tagline — it's the philosophy that defines everything we do at IRA Beverages. From the source of our water to the final sealed bottle, every step of our process is built on the foundation of purity, sustainability, and natural goodness.
+              </p>
+              <p>
+                We believe that nature provides everything needed for true refreshment. That's why our juices and sodas are made with minimal processing, no unnecessary additives, and maximum care — preserving the natural taste and freshness that your body deserves.
+              </p>
+              <p>
+                Our state-of-the-art purification systems and eco-friendly practices ensure that every drop reflects the authentic essence of nature. At IRA, being Pure by Nature means choosing honesty over additives, freshness over flavoring, and nature over everything else.
+              </p>
+            </div>
           </div>
         </div>
       </section>
