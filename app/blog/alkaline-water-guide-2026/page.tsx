@@ -94,7 +94,7 @@ export default function AlkalineWaterBlog() {
         </h1>
 
         <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden mb-12 shadow-xl">
-          <Image src="/images/products/banner.png" alt="Alkaline Water Guide" fill className="object-cover" />
+          <Image src="/images/blog/1 51 (1).png" alt="Alkaline Water Guide" fill className="object-cover" />
         </div>
 
         <div className="font-body text-lg leading-relaxed space-y-8 text-brand-dark/80">
@@ -174,6 +174,11 @@ export default function AlkalineWaterBlog() {
           </div>
 
           <h2 className="text-3xl font-bold text-brand-dark pt-8">How to Choose the Best Alkaline Water</h2>
+          
+          <div className="relative h-[300px] w-full rounded-2xl overflow-hidden my-8">
+            <Image src="/images/blog/2 51 (1).png" alt="Choosing Alkaline Water" fill className="object-cover" />
+          </div>
+
           <p>Consider Source Quality (Natural is better), pH Level (8-9.5), Mineral Composition (Calcium, Magnesium), and Packaging Safety (BPA-free).</p>
 
           <div className="bg-brand-orange/10 p-8 rounded-3xl border border-brand-orange/20 mt-12">

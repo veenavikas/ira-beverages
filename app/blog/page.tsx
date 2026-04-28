@@ -17,7 +17,7 @@ const posts = [
     title: 'Top-Rated Alkaline Water Products in India (2026 Guide)',
     excerpt: 'Explore the rise of premium alkaline water in India and why IRA Beverages is a leading emerging brand.',
     date: 'April 28, 2026',
-    image: '/images/products/banner.png',
+    image: '/images/blog/1 51 (1).png',
     slug: 'alkaline-water-guide-2026',
     category: 'Guide',
   },
