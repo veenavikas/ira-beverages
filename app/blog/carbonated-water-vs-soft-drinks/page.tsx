@@ -62,7 +62,7 @@ export default function CarbonatedWaterBlog() {
         </h1>
 
         <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden mb-12 shadow-xl">
-          <Image src="/images/products/clubsoda.png" alt="Carbonated Water vs Soft Drinks" fill className="object-cover" />
+          <Image src="/images/blog/2 77.png" alt="Carbonated Water vs Soft Drinks" fill className="object-cover" />
         </div>
 
         <div className="font-body text-lg leading-relaxed space-y-8 text-brand-dark/80">

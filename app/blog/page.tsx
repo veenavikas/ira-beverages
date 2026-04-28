@@ -35,7 +35,7 @@ const posts = [
     title: 'Carbonated Water vs Soft Drinks: Is it Healthier?',
     excerpt: 'A deep dive into why switching to sparkling water can transform your hydration habits.',
     date: 'April 28, 2026',
-    image: '/images/products/clubsoda.png',
+    image: '/images/blog/1 81.png',
     slug: 'carbonated-water-vs-soft-drinks',
     category: 'Health',
   },
