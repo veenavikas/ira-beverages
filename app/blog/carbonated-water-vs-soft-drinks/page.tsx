@@ -62,7 +62,7 @@ export default function CarbonatedWaterBlog() {
         </h1>
 
         <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden mb-12 shadow-xl">
-          <Image src="/images/blog/2_77.jpg" alt="Carbonated Water vs Soft Drinks" fill className="object-cover" priority />
+          <Image src="/images/blog/blog3_hero.jpg" alt="Carbonated Water vs Soft Drinks" fill className="object-cover" priority />
         </div>
 
         <div className="font-body text-lg leading-relaxed space-y-8 text-brand-dark/80">
@@ -128,6 +128,10 @@ export default function CarbonatedWaterBlog() {
             <li><strong>Choose Natural Options:</strong> Prefer carbonated water or low-calorie drinks</li>
             <li><strong>Avoid Excess Additives:</strong> Limit artificial ingredients</li>
           </ul>
+
+          <div className="relative h-[400px] w-full rounded-2xl overflow-hidden my-8 shadow-lg">
+            <Image src="/images/blog/blog3_preview.png" alt="Carbonated Water vs Soft Drinks" fill className="object-cover" />
+          </div>
 
           <h2 className="text-3xl font-bold text-brand-dark pt-12">Conclusion</h2>
           <p>

@@ -46,7 +46,7 @@ export default function B12WaterBlog() {
         </h1>
 
         <div className="relative h-[400px] md:h-[500px] w-full rounded-3xl overflow-hidden mb-12 shadow-xl">
-          <Image src="/images/blog/2_76.png" alt="B12 Water Benefits" fill className="object-cover" priority />
+          <Image src="/images/blog/blog2_hero.png" alt="B12 Water Benefits" fill className="object-cover" priority />
         </div>
 
         <div className="font-body text-lg leading-relaxed space-y-8 text-brand-dark/80">
@@ -121,6 +121,10 @@ export default function B12WaterBlog() {
           <div className="bg-brand-green/10 p-8 rounded-3xl mt-12">
             <h3 className="text-2xl font-bold text-brand-green mb-4">Verdict</h3>
             <p>If you have a deficiency, supplements are better. If you want daily support, B12 water is a great option.</p>
+          </div>
+
+          <div className="relative h-[400px] w-full rounded-2xl overflow-hidden my-8 shadow-lg">
+            <Image src="/images/blog/blog2_preview.png" alt="B12 Water Benefits" fill className="object-cover" />
           </div>
 
           <h2 className="text-3xl font-bold text-brand-dark pt-12">Who Should Consider B12 Water?</h2>
